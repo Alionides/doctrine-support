@@ -1,0 +1,34 @@
+{
+  "name": "larapack/doctrine-support",
+  "description": "Better Doctrine Support with Laravel (Support for `enum`)",
+  "keywords": ["laravel", "enum", "doctrine", "dbal", "support"],
+  "license": "MIT",
+  "homepage": "https://github.com/larapack/doctrine-support",
+  "support": {
+    "issues": "https://github.com/larapack/doctrine-support/issues",
+    "source": "https://github.com/larapack/doctrine-support"
+  },
+  "authors": [
+    {
+      "name": "Mark Topper",
+      "email": "mark@ulties.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3 || ^8.0",
+    "illuminate/support": "^8.0 || ^9.0 || ^10.0 || ^11.0",
+    "doctrine/dbal": "^2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Larapack\\DoctrineSupport\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider"
+      ]
+    }
+  }
+}
